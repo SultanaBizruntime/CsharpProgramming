@@ -33,9 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleApp2.SortedList1</StartupObject>
+    <StartupObject>ConsoleApp2.InnerException</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net, Version=2.0.7.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.7\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.8.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.8.1\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -50,17 +58,22 @@
     <Compile Include="Array2.cs" />
     <Compile Include="Array3.cs" />
     <Compile Include="ArrayCopy.cs" />
+    <Compile Include="CustomException.cs" />
     <Compile Include="Dictionary1.cs" />
     <Compile Include="DynamicArray.cs" />
+    <Compile Include="Exception10.cs" />
     <Compile Include="Generics1.cs" />
     <Compile Include="Generics2.cs" />
     <Compile Include="Generics3.cs" />
     <Compile Include="Generics4.cs" />
     <Compile Include="Hashtable.cs" />
+    <Compile Include="InnerException.cs" />
     <Compile Include="List1.cs" />
     <Compile Include="List2.cs" />
+    <Compile Include="Log1.cs" />
     <Compile Include="Nullable.cs" />
     <Compile Include="NullableCoaleascing.cs" />
+    <Compile Include="OptionalParams.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SortedList1.cs" />
     <Compile Include="SwitchCase.cs" />
@@ -69,6 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

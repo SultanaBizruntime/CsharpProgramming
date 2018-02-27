@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ConsoleApp2.SwitchCase1</StartupObject>
+    <StartupObject>ConsoleApp2.Exception9</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -50,18 +50,41 @@
     <Compile Include="Array2.cs" />
     <Compile Include="Array3.cs" />
     <Compile Include="ArrayCopy.cs" />
+    <Compile Include="Exception2.cs" />
+    <Compile Include="Dictionary1.cs" />
     <Compile Include="DynamicArray.cs" />
+    <Compile Include="Exception1.cs" />
+    <Compile Include="Exception3.cs" />
+    <Compile Include="Exception4.cs" />
+    <Compile Include="Exception5.cs" />
+    <Compile Include="Exception6.cs" />
+    <Compile Include="Exception7.cs" />
+    <Compile Include="Exception8.cs" />
+    <Compile Include="Exception9.cs" />
+    <Compile Include="File1.cs" />
     <Compile Include="Generics1.cs" />
     <Compile Include="Generics2.cs" />
+    <Compile Include="Generics3.cs" />
+    <Compile Include="Generics4.cs" />
+    <Compile Include="Hashtable.cs" />
+    <Compile Include="Indexer1.cs" />
+    <Compile Include="Indexer2.cs" />
+    <Compile Include="Indexer3.cs" />
+    <Compile Include="List1.cs" />
+    <Compile Include="List2.cs" />
     <Compile Include="Nullable.cs" />
     <Compile Include="NullableCoaleascing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SortedList1.cs" />
     <Compile Include="SwitchCase.cs" />
     <Compile Include="SwitchCase1.cs" />
     <Compile Include="WithoutNullCoaleascing.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Exception_Note.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

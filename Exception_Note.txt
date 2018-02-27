@@ -1,0 +1,56 @@
+﻿Points to Remember :
+-------------------------
+1. Use the try, catch and finally blocks to handle exceptions in C#.
+2. The try block must be followed by a catch or finally block or both.
+3. A multiple catch block is allowed with different exception filters. General catch{..} block must come last.
+4. catch{..} and catch(Exception ex){ } both cannot be used.
+5. The finally block must come after the try or catch block.
+6. The finally block will always execute irrespective of whether an exception occured or not.
+7. The finally block is appropriate place for disposing objects.
+8. The finally block cannot have a return or break because it isn't allow to leave the control.
+9. Nested try-catch blocks are allowed in C#.
+10. An Exception will be catched in the inner catch block if appropriate filter found, otherwise will be catched by outer catch block.
+
+
+C# - throw keyword:
+We have seen in the previous section how to handle exceptions which are automatically raised by CLR.
+ Here, we will see how to raise an exception manually.
+
+An exception can be raised manually by using the throw keyword.
+ Any type of exceptions which is derived from Exception class can be raised using the throw keyword.
+
+-----------------------------------------------------------------------------------------------------------
+
+The following table provides some of the predefined exception classes derived from the Sytem.SystemException class −
+
+Sr.No.	Exception Class & Description
+1	System.IO.IOException
+Handles I/O errors.
+
+2	System.IndexOutOfRangeException
+
+Handles errors generated when a method refers to an array index out of range.
+
+3	System.ArrayTypeMismatchException
+
+Handles errors generated when type is mismatched with the array type.
+
+4	System.NullReferenceException
+
+Handles errors generated from referencing a null object.
+
+5	System.DivideByZeroException
+
+Handles errors generated from dividing a dividend with zero.
+
+6	System.InvalidCastException
+
+Handles errors generated during typecasting.
+
+7	System.OutOfMemoryException
+
+Handles errors generated from insufficient free memory.
+
+8	System.StackOverflowException
+
+Handles errors generated from stack overflow.
