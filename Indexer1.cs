@@ -4,26 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp2
+namespace ConsoleApp1
 {
-    class Indexer1
-    {
-        public static void Main()
-        {
-            StringDataStore strStore = new StringDataStore();
 
-            strStore[0] = "One";
-            strStore[1] = "Two";
-            strStore[2] = "Three";
-            strStore[3] = "Four";
 
-            for (int i = 0; i < 10; i++)
-                Console.WriteLine(strStore[i]);
-            Console.Read();
-        }
-    }
-
-    public class StringDataStore
+    class StringDataStore
     {
 
         private string[] strArr = new string[10]; // internal data storage
@@ -54,7 +39,23 @@ namespace ConsoleApp2
     }
 
 
+    class Indexer1
+    {
+        static void Main(string[] args)
+        {
+            StringDataStore strStore = new StringDataStore();
+
+            strStore[0] = "One";
+            strStore[1] = "Two";
+            strStore[2] = "Three";
+            strStore[3] = "Four";
+
+            for (int i = 0; i < 10; i++)
+                Console.WriteLine(strStore[i]);
+            Console.Read();
+        }
 
 
 
+    }
 }
